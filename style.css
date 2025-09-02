@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary: #0ea5a4;
+    --dark: #0f1724;
+    --muted: #6b7280;
+    --card: #ffffff;
+    --glass: rgba(255,255,255,0.06);
+}
+html { 
+    scroll-behavior: smooth; 
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #111827; 
+    background: linear-gradient(180deg,#f8fafc 0%, #eef2f7 100%);
+    -webkit-font-smoothing: antialiased;
+}
+
+.projects .card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(2,6,23,0.12);
+}
+/* NAV */
+.navbar {
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 6px 18px rgba(14,20,28,0.06);
+}
+.navbar-brand { 
+    font-weight:800; color:var(--dark) !important; 
+    letter-spacing: 0.2px;
+}
+.nav-link { 
+    color: var(--muted) !important; 
+    font-weight: 600; 
+}
+.nav-link:hover {
+    color: var(--primary) !important; 
+}
+
+/* HERO */
+header.hero{
+    padding: 120px 0 80px;
+}
+.hero-card{
+    background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.85));
+    border-radius: 14px;
+    box-shadow: 0 12px 40px rgba(2,6,23,0.06);
+    padding: 36px;
+}
+.hero h1 { 
+    font-size: clamp(2.1rem, 4vw, 3.2rem); 
+    margin: 0; font-weight:800; 
+    color: var(--dark);
+}
+.lead-muted { 
+    color: var(--muted); 
+    font-weight: 500; 
+    margin-top: 10px; 
+}
+
+/* typewriter  */
+.typewriter {
+    display: inline-block; 
+    padding-left: 4px; 
+    position: relative; 
+    color: var(--primary); 
+    font-weight: 700;
+    overflow: hidden; 
+    white-space: nowrap;
+    animation: type 4s steps(28,end) infinite;
+    border-right: 2px solid rgba(14,165,164,0.9);
+    width: 26ch;
+}
+@keyframes type {
+    from { width:0; }
+    60% { width: 26ch; }
+    100% { border-right-color: transparent; }
+}
+
+/* skill section */
+h3 {
+    display: inline-block;
+    border-bottom: 3px solid var(--primary);
+}
+
+.skill {
+    background: #fff; 
+    padding: 18px; 
+    border-radius: 12px; 
+    box-shadow: 0 6px 18px rgba(2,6,23,0.05);
+}
+
+.progress-track{
+    background: #eef2f7; 
+    border-radius: 999px; 
+    height: 10px; 
+    overflow: hidden;
+}
+
+.progress-fill{
+    height: 10px; 
+    border-radius: 999px; 
+    background: linear-gradient(90deg,var(--primary), #06b6d4); 
+    width: 0%;
+    transition: width .8s cubic-bezier(.2,.9,.3,1);
+}
+
+/* resume */
+
+.timeline {
+    position: relative; 
+    padding-left: 2rem;
+}
+.timeline::before{
+    content:""; position: absolute; 
+    left:8px; top:0; bottom:0; width:3px; 
+    background: linear-gradient(var(--primary), #06b6d4); 
+    border-radius: 4px;
+}
+.timeline-item { 
+    position: relative; 
+    margin-bottom: 28px; 
+    padding-left: 18px; 
+}
+.timeline-item::before{
+    content:""; position:absolute; 
+    left:-4px; top:4px; width:14px; height:14px;
+    border-radius: 50%; 
+    background: #fff; 
+    border: 3px solid var(--primary);
+}
+
+/* PROJECTS GRID */
+.projects .card{
+    border: 0; overflow: hidden; border-radius: 12px;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+.projects .card:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 18px 40px rgba(2,6,23,0.08); 
+}
+.project-thumb { 
+    height: 200px; 
+    object-fit: cover; 
+    width: 100%; 
+    display: block; }
+
+.overlay {
+    position: absolute; inset: 0; 
+    background: linear-gradient(180deg, rgba(2,6,23,0.0), rgba(2,6,23,0.4));
+    display: flex; align-items: flex-end; 
+    padding: 16px; color: white; opacity: 0; 
+    transition: opacity .2s ease;
+}
+.projects .card:hover .overlay { 
+    opacity: 1; 
+}
+
+
+/* CONTACT */
+.contact-card {
+    border-radius: 12px; 
+    padding: 24px; 
+    box-shadow: 0 10px 30px rgba(2,6,23,0.06); 
+    background: #fff; 
+}
+
+/* FOOTER */
+footer { 
+    padding: 36px 0; 
+    color: var(--muted); 
+    text-align: center; 
+    font-size: .95rem; 
+}
+.social-links {
+    padding-bottom: 20px;   
+}
+.social-links .icons {
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.icons:hover {
+    color: var(--dark);
+}
+
+/* media query for small screens */
+@media (max-width:767px){
+    header.hero { 
+        padding-top: 80px; 
+    }
+    .hero-card { 
+        padding: 20px; 
+    }
+}
