@@ -39,7 +39,7 @@
   <header class="hero" id="home">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-lg-8">
+        <div class="col-lg-7">
           <div class="hero-card">
             <p class="mb-2 text-uppercase" style="color:var(--primary);font-weight:700;letter-spacing:1px;">
               Hello — I'm</p>
@@ -47,7 +47,7 @@
                 Problem Solver</span></h1><br>
             <h4>Welcome to my Web Developer Portfolio! </h4>
             <p class="lead-muted">
-              I build small projects in C++ and design responsive websites with HTML, CSS, and Bootstrap.
+              I build small projects in C++ and design responsive websites with HTML, CSS, Bootstrap and JavaScript.
             <div class="typewriter">Frontend • C++ • Python • SQL</div>
             </p>
 
@@ -74,7 +74,7 @@
         </div>
 
         <!-- Hero image/card -->
-        <div class="col-lg-4 mt-4 mt-lg-0">
+        <div class="col-lg-5 mt-4 mt-lg-0">
           <div class="card" style="border-radius:14px;overflow:hidden;box-shadow:0 18px 40px rgba(2,6,23,0.06)">
             <img src="rohitPort.png" alt="profile-photo" style="width:100%;height:100%;object-fit:cover;">
           </div>
@@ -89,9 +89,12 @@
       <div class="row g-4 align-items-center">
         <div class="col-lg-6">
           <h3>About Me</h3>
-          <p class="text-muted">I'm a passionate learner, currently a student building my foundation in computer science through <strong>C++</strong> programming and <strong>Frontend Web Development</strong>. 
-  My skills include designing clean, responsive layouts using <strong>HTML, CSS, Bootstrap and JS</strong>, along with managing databases using <strong>My-SQL</strong>.
-  I believe in continuous learning and look forward to expanding my knowledge in modern web technologies and software development.</p>
+          <p class="text-muted">I'm a passionate learner, currently a student building my foundation in computer science
+            through <strong>C++</strong> programming and <strong>Frontend Web Development</strong>.
+            My skills include designing clean, responsive layouts using <strong>HTML, CSS, Bootstrap and JS</strong>,
+            along with managing databases using <strong>My-SQL</strong>.
+            I believe in continuous learning and look forward to expanding my knowledge in modern web technologies and
+            software development.</p>
 
           <ul class="list-unstyled">
             <li><strong>Location:</strong> India</li>
@@ -141,10 +144,10 @@
   </section>
 
   <!-- RESUME -->
-   <section id="resume" class="py-5">
+  <section id="resume" class="py-5">
     <div class="container">
       <h3>Resume</h3>
-      <h6>I consider my self a responsible and orderly person.  I am looking foward for my first Job experience.</h6>
+      <h6>I consider my self a responsible and orderly person. I am looking foward for my first Job experience.</h6>
       <div class="row mt-4">
         <div class="col-md-7">
           <div class="timeline">
@@ -244,35 +247,35 @@
         <div class="col-lg-5 py-5">
           <div class="contact-card">
             <h3>Get in touch</h3>
-              <p class="text-muted">Want to collaborate on a project or hire me? Send a message — I usually reply within
-                a day.</p>
-              <ul class="list-unstyled">
-                <li><i class="ri-mail-fill"></i><strong> Email:</strong> rohit0619@gmail.com</li>
-                <li><i class="ri-map-pin-fill"></i><strong> Location:</strong> India</li>
-                <li><i class="ri-phone-fill"></i><strong> Contact Me:</strong> +91 6376172202</li>
-              </ul>
+            <p class="text-muted">Want to collaborate on a project or hire me? Send a message — I usually reply within
+              a day.</p>
+            <ul class="list-unstyled">
+              <li><i class="ri-mail-fill"></i><strong> Email:</strong> rohit0619@gmail.com</li>
+              <li><i class="ri-map-pin-fill"></i><strong> Location:</strong> India</li>
+              <li><i class="ri-phone-fill"></i><strong> Contact Me:</strong> +91 6376172202</li>
+            </ul>
           </div>
         </div>
 
         <div class="col-lg-7">
           <div class="card contact-card">
             <h6 class="mb-3">Message Me</h6>
-            <form action="submit">
+            <form id="contact-form">
               <div class="row g-3">
                 <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Your name" required>
+                  <input type="text" class="form-control" name="user_name" placeholder="Your name" required>
                 </div>
                 <div class="col-md-6">
-                  <input type="email" class="form-control" placeholder="Your email" required>
+                  <input type="email" class="form-control" name="user_email" placeholder="Your email" required>
                 </div>
                 <div class="col-12">
-                  <input type="text" class="form-control" placeholder="Subject">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject">
                 </div>
                 <div class="col-12">
-                  <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                  <textarea class="form-control" rows="5" name="message" placeholder="Message"></textarea>
                 </div>
                 <div class="col-12 d-flex justify-content-end">
-                  <button class="btn btn-primary">Send Message</button>
+                  <button type="submit" class="btn btn-primary">Send Message</button>
                 </div>
               </div>
             </form>
@@ -288,14 +291,16 @@
 
     <div class="container">
       <div class="copyright text-center ">
-        <p><i class="ri-copyright-line"></i><span>Copyright</span> <strong class="px-1 sitename">Rohit's
+        <p class="mb-2"><i class="ri-copyright-line"></i><span>Copyright</span> <strong class="px-1 sitename">Rohit's
             PortFolio</strong> <span>All Rights Reserved</span></p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href="https://www.linkedin.com/in/rohit-baghel-4b3b96370/" target="_blank"><i class="icons ri-linkedin-box-fill"></i></a>
+        <a href="https://www.linkedin.com/in/rohit-baghel-4b3b96370/" target="_blank"><i
+            class="icons ri-linkedin-box-fill"></i></a>
         <!-- <a href=""><i class="icons ri-twitter-x-line"></i></a> -->
         <a href="https://github.com/rohitbaghel06" target="_blank"><i class="icons ri-github-fill"></i></a>
-        <a href="https://www.instagram.com/rohit_baghel19?igsh=dzNhcDA1ajhpNHhq" target="_blank"><i class="icons ri-instagram-line"></i></a>
+        <a href="https://www.instagram.com/rohit_baghel19?igsh=dzNhcDA1ajhpNHhq" target="_blank"><i
+            class="icons ri-instagram-line"></i></a>
       </div>
       <div>
         Designed by Rohit Baghel</a>
@@ -305,6 +310,26 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("jiUME_k5rkYkJuagH"); // EmailJS Public Key
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+      event.preventDefault(); // prevent page reload
+
+      emailjs.sendForm("service_00mxslt", "template_q3n4lnk", this)
+        .then(function (response) {
+          alert("✅ Message sent successfully!");
+        }, function (error) {
+          alert("❌ Failed to send message. Please try again.");
+          console.log(error);
+        });
+    });
+
+  </script>
+
 </body>
 
 </html>
